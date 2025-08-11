@@ -562,7 +562,7 @@ class SwinTransformerModel(tf.keras.Model):
         patches_resolution = self.patch_embed.patches_resolution
         self.patches_resolution = patches_resolution
 
-        # absolute postion embedding
+        # absolute position embedding
         if self.ape:
             self.absolute_pos_embed = self.add_weight(
                 "absolute_pos_embed",
